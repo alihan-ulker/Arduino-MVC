@@ -1,0 +1,178 @@
+﻿body {
+    margin: 0;
+    background-color: #263238;
+}
+
+#main {
+    width: 100%;
+    background-color: #263238;
+    position: relative;
+}
+
+#thermometer {
+    width: 70px;
+    margin: 5% auto;
+}
+
+#far {
+    border: 4px solid black;
+    height: 400px;
+}
+
+#cel {
+    border: 4px solid black;
+    height: 400px;
+}
+
+#stem {
+    width: 20px;
+    height: 215px;
+    position: relative;
+    left: 21px;
+    z-index: 1;
+    border-radius: 50px 50px 0 0;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    animation-name: stem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#marks {
+    width: 20px;
+    height: 90px;
+    position: relative;
+    bottom: 180px;
+    left: 36px;
+    z-index: 40;
+}
+
+#line {
+    line-height: .7em;
+}
+
+#merc-stem {
+    width: 20px;
+    height: 85px;
+    position: relative;
+    bottom: 175px;
+    left: 25px;
+}
+
+#mercury {
+    width: 20px;
+    height: 25px;
+    position: relative;
+    bottom: -80%;
+    z-index: 20;
+    background-color: #01579b;
+    animation-name: mercury;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#bulb {
+    position: relative;
+    /*   overflow: hidden; */
+    bottom: 190px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background-color: #01579b;
+    border-radius: 50px;
+    border: 4px solid black;
+    animation-name: bulb;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#text {
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+}
+
+h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+#one {
+    width: 400px;
+    animation-name: one;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#two {
+    width: 100px;
+    animation-name: two;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        height: 600px;
+        overflow: hidden;
+    }
+}
+
+@keyframes bulb {
+    from {
+        background-color: #dd2c00
+    }
+
+    ; to {
+        background-color: #b71c1c;
+    }
+
+    ;
+}
+
+@keyframes mercury {
+    from {
+        background-color: #dd2c00;
+        height: 190px;
+        bottom: 100%;
+    }
+
+    ; to {
+        background-color: #b71c1c;
+        height: 25px;
+        bottom: -80%;
+    }
+
+    ;
+}
+
+@keyframes one {
+    from {
+        width: 100px;
+    }
+
+    ; to {
+        width: 400px;
+    }
+
+    ;
+}
+
+@keyframes two {
+    from {
+        width: 400px;
+    }
+
+    ; to {
+        width: 100px;
+    }
+
+    ;
+}

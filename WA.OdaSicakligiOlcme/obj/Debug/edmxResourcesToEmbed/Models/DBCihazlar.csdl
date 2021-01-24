@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBOdaSicakligiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cihazlar">
+    <Key>
+      <PropertyRef Name="CihazID" />
+    </Key>
+    <Property Name="CihazID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DBOdaSicakligiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cihazlar" EntityType="Self.Cihazlar" />
+  </EntityContainer>
+</Schema>

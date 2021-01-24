@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBOdaSicakligiModelStoreContainer" CdmEntityContainer="DBOdaSicakligiEntities">
+    <EntitySetMapping Name="Cihazlar">
+      <EntityTypeMapping TypeName="DBOdaSicakligiModel.Cihazlar">
+        <MappingFragment StoreEntitySet="Cihazlar">
+          <ScalarProperty Name="CihazID" ColumnName="CihazID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
